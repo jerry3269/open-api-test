@@ -1,7 +1,7 @@
-package com.example.open_api_test.controller;
+package com.example.open_api_test.tmap.controller;
 
-import com.example.open_api_test.dto.response.TMapApiClientResponse;
-import com.example.open_api_test.service.TMapApiService;
+import com.example.open_api_test.tmap.dto.response.TMapApiClientResponse;
+import com.example.open_api_test.tmap.service.TMapApiService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
