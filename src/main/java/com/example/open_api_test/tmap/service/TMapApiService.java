@@ -16,18 +16,10 @@ import java.util.Collections;
 public class TMapApiService {
 
     private final RestTemplate restTemplate;
-
-    @Value("${tmap.app.key}") private String TMAPKEY;
+    private final UriBuilderService uriBuilderService;
 
     public TMapApiClientResponse getApi(String searchKeyword) throws Exception {
-
-        URI uri = UriComponentsBuilder.fromHttpUrl("https://apis.openapi.sk.com/tmap/pois?version=1&&searchType=all&searchtypCd=A&reqCoordType=WGS84GEO&resCoordType=WGS84GEO&page=1&count=20&multiPoint=N&poiGroupYn=N")
-                .queryParam("searchKeyword", searchKeyword)
-                .queryParam("appKey", TMAPKEY)
-                .encode()
-                .build()
-                .toUri();
-
+        URI uri = uriBuilderService.build(searchKeyword);
         HttpHeaders httpHeaders = new HttpHeaders();
         httpHeaders.setAccept(Collections.singletonList(MediaType.APPLICATION_JSON));
         HttpEntity<Object> httpEntity = new HttpEntity<>(httpHeaders);
