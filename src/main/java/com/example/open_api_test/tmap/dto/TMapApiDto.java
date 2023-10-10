@@ -1,4 +1,4 @@
-package com.example.open_api_test.dto;
+package com.example.open_api_test.tmap.dto;
 
 public record TMapApiDto(
         String name,

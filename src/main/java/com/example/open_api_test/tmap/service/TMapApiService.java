@@ -1,6 +1,6 @@
-package com.example.open_api_test.service;
+package com.example.open_api_test.tmap.service;
 
-import com.example.open_api_test.dto.response.TMapApiClientResponse;
+import com.example.open_api_test.tmap.dto.response.TMapApiClientResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.*;

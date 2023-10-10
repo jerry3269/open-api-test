@@ -1,6 +1,6 @@
-package com.example.open_api_test.dto.response;
+package com.example.open_api_test.tmap.dto.response;
 
-import com.example.open_api_test.dto.TMapApiDto;
+import com.example.open_api_test.tmap.dto.TMapApiDto;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;

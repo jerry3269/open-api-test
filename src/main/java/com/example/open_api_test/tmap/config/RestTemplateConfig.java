@@ -1,4 +1,4 @@
-package com.example.open_api_test.config;
+package com.example.open_api_test.tmap.config;
 
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
