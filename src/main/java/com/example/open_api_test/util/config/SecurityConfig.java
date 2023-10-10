@@ -1,4 +1,4 @@
-package com.example.open_api_test.tmap.config;
+package com.example.open_api_test.util.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
